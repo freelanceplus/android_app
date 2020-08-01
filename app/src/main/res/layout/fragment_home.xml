@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.HomeFragment">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.CardView"
+            android:layout_margin="15dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#20041F60"
+            app:strokeWidth="1dp"
+            app:contentPadding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/image"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/colorPrimaryDark" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#20041F60"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/home_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seller Name"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/opensans_bold"
+                        android:textFontWeight="1000"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1" />
+
+                    <TextView
+                        android:id="@+id/home_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seller Email"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:fontFamily="@font/opensans_regular"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2" />
+
+                    <TextView
+                        android:id="@+id/home_verified"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seller Verified"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:fontFamily="@font/opensans_regular"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orders"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/dark_grey"
+            android:fontFamily="@font/opensans_regular"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1" />
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/home_tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMinWidth="?actionBarSize"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorPrimaryDark"
+            app:tabIndicatorHeight="4dp"
+            app:tabTextColor="@color/dark_grey"
+            app:tabSelectedTextColor="@color/colorPrimaryDark"
+            app:tabTextAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            app:tabMode="fixed"/>
+
+        <ListView
+            android:id="@+id/home_orders_listview"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="5dp"
+            android:layout_height="match_parent"/>
+
+</LinearLayout>

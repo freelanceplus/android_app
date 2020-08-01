@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/msg_container"
+        android:layout_margin="8dp"
+        android:padding="10dp"
+        android:background="@drawable/incoming_bubble"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingRight="15dp"
+            android:id="@+id/bubble_sender_name"
+            android:layout_alignParentTop="true"
+            android:textSize="12dp"
+            android:paddingLeft="12dp"
+            android:textColor="@color/white"
+            android:text="Musti"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_below="@+id/bubble_sender_name"
+            android:id="@+id/bubble_message"
+            android:textSize="15dp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginLeft="8dp"
+            android:text="Hello How Are You ?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

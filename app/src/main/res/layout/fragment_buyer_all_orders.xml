@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    tools:context=".Fragments.BuyerAllOrders">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manage Sales"
+                android:textColor="@color/white"
+                android:fontFamily="@font/opensans_extrabold"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/buyer_all_orders_txt"
+            android:layout_marginTop="50dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No, Order \n Let's create new Order"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/opensans_extrabold"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/buyer_all_orders_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           />
+
+    </LinearLayout>
+
+
+</ScrollView>

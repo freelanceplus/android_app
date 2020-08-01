@@ -1,0 +1,2 @@
+rootProject.name='Freelance Plus'
+include ':app'

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "579583429088",
+    "firebase_url": "https://freelanceplus-9aa42.firebaseio.com",
+    "project_id": "freelanceplus-9aa42",
+    "storage_bucket": "freelanceplus-9aa42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579583429088:android:0ebb871589de5d962b4385",
+        "android_client_info": {
+          "package_name": "com.ciit.freelanceplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579583429088-dhljeh7rvhcv7q264su6fbili9js91q1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbtrW40YvMvblj7Ztqo9WaL3ha3PtsXn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579583429088-dhljeh7rvhcv7q264su6fbili9js91q1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

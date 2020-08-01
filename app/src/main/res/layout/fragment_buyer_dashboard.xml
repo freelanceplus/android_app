@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    tools:context=".Fragments.BuyerDashboardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Freelancer Plus"
+                android:textColor="@color/white"
+                android:fontFamily="@font/opensans_extrabold"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+
+            <LinearLayout
+                android:id="@+id/buyer_dashboard_logout"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="end">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_logout"
+
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/buyerdash"
+            android:contentDescription="TODO"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Services we offered"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="12dp"
+            android:fontFamily="@font/opensans_semibold_0"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:src="@drawable/android"
+                android:layout_weight="0.3"
+                android:contentDescription="TODO" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:src="@drawable/swift"
+                android:contentDescription="TODO"
+                android:layout_weight="0.3"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:src="@drawable/laravel"
+                android:contentDescription="TODO"
+                android:layout_weight="0.3"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:src="@drawable/react"
+                android:layout_weight="0.3"
+                android:contentDescription="TODO" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:src="@drawable/nodejs"
+                android:contentDescription="TODO"
+                android:layout_weight="0.3"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:src="@drawable/php"
+                android:contentDescription="TODO"
+                android:layout_weight="0.3"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our Top Freelancers"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="12dp"
+            android:fontFamily="@font/opensans_semibold_0"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/usman"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/opensans_semibold_0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14dp"
+                    android:text="Usman Shah -\n Android Developer"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/abdullah"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/opensans_semibold_0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14dp"
+                    android:text="Abdullah -\n Php Developer"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ahmed"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/opensans_semibold_0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14dp"
+                    android:text="Ahmed -\n Front-end Developer"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/buyer_frag_ordernow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Now"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

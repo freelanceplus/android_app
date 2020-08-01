@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    tools:context=".Activities.SellerOrderDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/order_details_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:contentDescription="TODO"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seller Order Details"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/opensans_semibold_0"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="18dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/order_details_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@color/dark_grey"
+            android:contentDescription="TODO"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/order_details_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Order # "
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/opensans_bold"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#f3f3f3"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/order_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Project Title: "
+                android:gravity="start"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/opensans_semibold_0"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"/>
+
+            <TextView
+                android:id="@+id/order_details_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Description: "
+                android:gravity="start"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/opensans_semibold_0"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"/>
+
+            <TextView
+                android:id="@+id/order_details_projectType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Project Type: Laravel, UI/UX "
+                android:gravity="start"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/opensans_semibold_0"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"/>
+
+            <TextView
+                android:id="@+id/order_details_budget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Budget: 25000 PKR "
+                android:gravity="start"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/opensans_semibold_0"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"/>
+
+
+            <TextView
+                android:id="@+id/order_details_deadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Deadline "
+                android:gravity="start"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/opensans_bold"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/order_details_status"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Status "
+                    android:gravity="start"
+                    android:textColor="#0aa132"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buyers Attachments:"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"/>
+
+
+            <LinearLayout
+                android:id="@+id/buyer_attachments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#f3f3f3"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:id="@+id/seller_details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Seller Details"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/opensans_bold"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"/>
+
+
+            <TextView
+                android:id="@+id/order_details_sellerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Seller: Usman Shah"
+                android:gravity="start"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/opensans_semibold_0"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"/>
+
+            <TextView
+                android:id="@+id/order_details_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Remarks: Laravel, UI/UX "
+                android:gravity="start"
+                android:textColor="@color/dark_grey"
+                android:fontFamily="@font/opensans_semibold_0"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sellers Attachments:"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"/>
+
+
+            <LinearLayout
+                android:id="@+id/seller_attachments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="vertical">
+
+
+
+            </LinearLayout>
+
+            <!--- Start Order or Submit Button Layout -->
+
+            <Button
+                android:id="@+id/order_details_addfiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attach Files "
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/white"
+                android:padding="15dp"
+                android:visibility="gone"
+                android:layout_margin="15dp"/>
+
+            <!--- Start Order or Submit Button Layout -->
+
+        </LinearLayout>
+
+        <!--- Chat Layout Start -->
+        <LinearLayout
+            android:id="@+id/chat_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Chat"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/opensans_regular"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#f3f3f3"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/order_details_Chat"
+                android:layout_width="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <EditText
+                    android:id="@+id/order_details_edt"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14dp"/>
+
+                <ImageButton
+                    android:id="@+id/order_details_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#f3f3f3"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_send"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--- Chat Layout End -->
+
+        <!--- Start Order or Submit Button Layout -->
+        <Button
+            android:id="@+id/order_details_startBTn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Order"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:visibility="gone"
+            android:layout_margin="15dp"/>
+        <!--- Start Order or Submit Button Layout -->
+
+
+    </LinearLayout>
+
+</ScrollView>
